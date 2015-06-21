@@ -1,0 +1,33 @@
+---
+title: "ETLUpgradeProjectPerformance"
+output: html_document
+---
+
+# Documentation
+ Background and overview of how to use this app.
+ 
+## Background 
+  
+We are running a project to upgrade our ETL Platfrom along with an OS Migration as wel. We did a benchmark study as part of Proof Of Concept and found that we had an improvement of at least 60% compared the older product. This app levearges the stats collected and summarizes and plots the data by Project. ETL Jobs are categorized under multiple projets. Each Project is supported by a team. Teams have general interest about how the jobs in their projects are running and how much batch efficiencies have been gained.
+
+## Statistics Collection
+
+Statistics of all the jobs that are executed in the platform get logged to an oracle database. Project is being implemented in phases. Statistics from this database is pulled and they are tagged with an event of  either PreMigration or Post Migration. This data is saved as a dataset and deployed as a part of the App.
+
+## Usage:
+
+Each of the team that is interested in reviewing their project performance can choose the project they are interested in and look at the following two tabs:
+
+ * Batch Summary By Day:
+      + This provides comparsion between time spent in the ETL jobs before and after migration along with Batch Savings in (hours) for each week day.
+      
+ * Batch Summary By Job:
+    + This provides job level data for average execution time ( in minutes ) for the job before migration, after migration and batch savings. The data could be sorted on any column and also searched by any column.
+   
+
+   
+
+  
+
+
+
